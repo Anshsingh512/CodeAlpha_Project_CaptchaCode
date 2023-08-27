@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom CAPTCHA Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="popup-close" id="popup-close">&times;</span>
+            <p>Authentication Successful!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form action="#" method="POST" onsubmit="showPopup(); return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <div class="captcha-container">
+                <div class="captcha-image" id="captcha-image"></div>
+                <button type="button" class="refresh-button" onclick="generateCaptcha()">Refresh CAPTCHA</button>
+            </div>
+            
+            <label for="captcha">Enter the CAPTCHA:</label>
+            <input type="text" id="captcha" name="captcha" required><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
