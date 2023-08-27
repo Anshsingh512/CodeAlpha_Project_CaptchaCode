@@ -12,13 +12,7 @@ Verifies the entered CAPTCHA value before showing an "Authentication Successful"
 Prerequisites
 Web browser (Chrome, Firefox, Safari, etc.)
 Getting Started
-Clone the repository :
 
-bash
-git clone https://github.com/Anshsingh512/Captcha-code.git
-Navigate to the project directory:
-bash
-cd Captcha-Code
 Open index.html in your web browser to view the CAPTCHA example.
 
 Usage
